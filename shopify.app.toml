@@ -1,0 +1,31 @@
+# =============================================
+# WEALTH EMPIRE OS — Custom Shopify App
+# Self-evolving • Dynamic Learning • Automated Remarketing
+# Built for Emily Blue Richards / Sausage Therapy / Forevermore Farm empire
+# =============================================
+
+name = "WealthEmpireOS"
+client_id = "71bd27ef41b24f72a63ebf34730738a1"
+application_url = "https://wealth-empire-os.ngrok.io"
+embedded = true
+
+[access_scopes]
+scopes = "write_products,read_products,write_orders,read_orders,write_customers,read_customers,write_draft_orders,read_draft_orders,write_discounts,read_discounts,write_themes,read_themes,write_script_tags,read_script_tags,write_webhooks,read_webhooks,read_analytics,read_inventory,write_inventory,read_fulfillments,write_fulfillments"
+
+[webhooks]
+api_version = "2026-04"
+
+[auth]
+redirect_urls = [
+  "https://wealth-empire-os.ngrok.io/auth/callback"
+]
+
+[build]
+automatically_update_urls_on_dev = true
+# Add your dev/test store here when ready
+de v_store_url = "your-test-store.myshopify.com"
+
+[commands]
+dev = "npm run dev"
+build = "npm run build"
+deploy = "npm run deploy"

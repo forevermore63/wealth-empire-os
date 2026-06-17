@@ -1,0 +1,14 @@
+{
+  "name": "wealth-empire-os",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "shopify app dev",
+    "build": "shopify app build",
+    "deploy": "shopify app deploy"
+  },
+  "dependencies": {
+    "@shopify/app": "^4.2.0",
+    "@shopify/cli": "^4.2.0"
+  }
+}
